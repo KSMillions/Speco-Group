@@ -208,27 +208,29 @@
                     <span class="section-tag">Partner With Us</span>
                     <h2 class="section-title">Ready to build your legacy?</h2>
                     <p>Stop using spreadsheets from 2010. Let's design the systems that will put your construction business a decade ahead.</p>
-                    <a href="mailto:info@specogroup.co.za" class="btn btn-outline" style="margin-top: 2rem;">info@specogroup.co.za</a>
+                    <a href="mailto:kkspeco@gmail.com" class="btn btn-outline" style="margin-top: 2rem;">kkspeco@gmail.com</a>
                 </div>
                 
                 <div class="contact-form-container glass-panel reveal delay-1">
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formsubmit.co/kkspeco@gmail.com" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="Name Surname" required>
+                            <input type="text" id="name" name="name" placeholder="Name Surname" required>
                         </div>
                         <div class="form-group">
                             <label for="company">Company</label>
-                            <input type="text" id="company" placeholder="Construction Firm (Pty) Ltd" required>
+                            <input type="text" id="company" name="company" placeholder="Construction Firm (Pty) Ltd" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="name@company.co.za" required>
+                            <input type="email" id="email" name="email" placeholder="name@company.co.za" required>
                         </div>
                         <div class="form-group">
                             <label for="message">How can we help optimize your operations?</label>
-                            <textarea id="message" rows="4" placeholder="Briefly describe your operational bottlenecks..." required></textarea>
+                            <textarea id="message" name="message" rows="4" placeholder="Briefly describe your operational bottlenecks..." required></textarea>
                         </div>
+                        <input type="hidden" name="_subject" value="New Enquiry from Speco Group Website">
+                        <input type="hidden" name="_captcha" value="false">
                         <button type="submit" class="btn btn-primary w-100">Send Enquiry</button>
                     </form>
                 </div>
