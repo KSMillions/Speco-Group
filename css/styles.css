@@ -651,11 +651,47 @@ p {
 /* ===============================================
    SECTION: PORTFOLIO & TESTIMONIALS
 =============================================== */
-.portfolio-showcase {
-  padding: 4rem;
-  border-top: 2px solid var(--silver-dark);
-  max-width: 900px;
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.portfolio-card {
+  padding: 3rem 2rem;
+  border-top: 3px solid var(--silver-dark);
+  transition: var(--transition-normal);
+}
+
+.portfolio-card:hover {
+  border-top-color: var(--white);
+  transform: translateY(-5px);
+}
+
+.portfolio-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+
+.portfolio-card .subtitle {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-card p:not(.subtitle) {
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .testimonials-grid {
