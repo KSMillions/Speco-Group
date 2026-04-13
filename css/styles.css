@@ -835,6 +835,32 @@ p {
   font-size: 0.875rem;
 }
 
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-dark);
+  border: 1px solid var(--glass-border);
+  color: var(--white);
+  transition: var(--transition-normal);
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  background: var(--white);
+  color: var(--bg-dark);
+  transform: translateY(-3px);
+}
+
 /* ===============================================
    PREMIUM MOBILE OPTIMIZATIONS
 =============================================== */
