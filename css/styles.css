@@ -694,6 +694,105 @@ p {
   }
 }
 
+/* ===============================================
+   LOGO RIBBON (ANIMATED TICKER)
+=============================================== */
+@keyframes ribbonScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logo-ribbon-wrapper {
+  margin: 3rem 0 2rem;
+  text-align: center;
+}
+
+.logo-ribbon-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--silver-dark);
+  margin-bottom: 1.5rem;
+}
+
+.logo-ribbon {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1.25rem 0;
+  /* Fade edges */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.logo-ribbon-track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: max-content;
+  animation: ribbonScroll 22s linear infinite;
+  will-change: transform;
+}
+
+/* Pause on hover */
+.logo-ribbon:hover .logo-ribbon-track {
+  animation-play-state: paused;
+}
+
+.ribbon-logo-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.ribbon-logo-item:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: var(--silver-dark);
+}
+
+.ribbon-logo-img {
+  height: 48px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+  filter: brightness(1) saturate(1);
+  transition: filter 0.3s ease;
+  display: block;
+}
+
+.ribbon-logo-item:hover .ribbon-logo-img {
+  filter: brightness(1.1) saturate(1.1);
+}
+
+.ribbon-separator {
+  flex-shrink: 0;
+  color: var(--silver-dark);
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+
 .testimonials-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
