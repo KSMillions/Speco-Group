@@ -366,6 +366,24 @@ p {
   z-index: -1;
 }
 
+.hero-watermark {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: translateY(-50%);
+  z-index: 0;
+  opacity: 0.04;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.hero-watermark img {
+  width: 800px;
+  max-width: 90vw;
+  height: auto;
+  filter: grayscale(100%) contrast(120%);
+}
+
 .hero-container {
   position: relative;
   z-index: 1;
