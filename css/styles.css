@@ -514,7 +514,7 @@ p {
 =============================================== */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
@@ -671,7 +671,7 @@ p {
 =============================================== */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -766,11 +766,16 @@ p {
   width: max-content;
   animation: ribbonScroll 22s linear infinite;
   will-change: transform;
+  transform: translate3d(0, 0, 0); /* Force GPU acceleration */
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
-/* Pause on hover */
-.logo-ribbon:hover .logo-ribbon-track {
-  animation-play-state: paused;
+/* Pause on hover (only on hoverable devices, e.g. desktop) */
+@media (hover: hover) {
+  .logo-ribbon:hover .logo-ribbon-track {
+    animation-play-state: paused;
+  }
 }
 
 .ribbon-logo-item {
@@ -1038,5 +1043,55 @@ p {
   .about-grid, .footer-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+}
+
+/* Specific optimizations for mobile phones */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  
+  .logo-ribbon {
+    padding: 0.85rem 0;
+    border-radius: 8px;
+  }
+  
+  .logo-ribbon-track {
+    gap: 2rem;
+  }
+  
+  .ribbon-logo-img {
+    height: 32px;
+  }
+  
+  .ribbon-logo-item {
+    padding: 0.35rem 0.7rem;
+  }
+
+  .reveal {
+    transform: translateY(20px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .value-item {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .table-container {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Accessibility: respect user preferences for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  
+  .logo-ribbon-track {
+    animation: none !important;
   }
 }
