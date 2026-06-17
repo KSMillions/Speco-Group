@@ -100,8 +100,8 @@ function initHeroCanvas(canvas) {
   const ctx = canvas.getContext('2d');
   let W, H, nodes, animId;
 
-  const TEAL   = 'rgba(0, 229, 195,';
-  const BLUE   = 'rgba(0, 153, 255,';
+  const TEAL   = 'rgba(220, 220, 220,';
+  const BLUE   = 'rgba(140, 140, 140,';
   const NODE_COUNT = 55;
 
   function resize() {
@@ -126,8 +126,8 @@ function initHeroCanvas(canvas) {
 
     // Background gradient
     const grad = ctx.createRadialGradient(W * 0.5, H * 0.4, 0, W * 0.5, H * 0.4, H * 0.9);
-    grad.addColorStop(0, 'rgba(10, 20, 35, 1)');
-    grad.addColorStop(1, 'rgba(7, 9, 15, 1)');
+    grad.addColorStop(0, 'rgba(12, 12, 12, 1)');
+    grad.addColorStop(1, 'rgba(3, 3, 3, 1)');
     ctx.fillStyle = grad;
     ctx.fillRect(0, 0, W, H);
 
@@ -208,11 +208,11 @@ function initLaptopDashboard(canvas) {
 
   // Document queue items
   const QUEUE = [
-    { label: 'INV-2024-0891', status: 'Processing', color: '#0099FF', progress: 0.72 },
+    { label: 'INV-2024-0891', status: 'Processing', color: '#a0a0a0', progress: 0.72 },
     { label: 'CTR-LEGAL-044',  status: 'In Review',  color: '#F59E0B', progress: 0.45 },
-    { label: 'KYC-FIN-2201',   status: 'Approved',   color: '#00E5C3', progress: 1.0  },
+    { label: 'KYC-FIN-2201',   status: 'Approved',   color: '#d0d0d0', progress: 1.0  },
     { label: 'RPT-OPS-1103',   status: 'Queued',     color: '#7A8299', progress: 0.12 },
-    { label: 'SHP-LOG-7744',   status: 'Routing',    color: '#A855F7', progress: 0.6  },
+    { label: 'SHP-LOG-7744',   status: 'Routing',    color: '#888888', progress: 0.6  },
   ];
   let counter = 1247;
 
@@ -234,13 +234,13 @@ function initLaptopDashboard(canvas) {
     // ── Top bar
     ctx.fillStyle = '#0E1117';
     ctx.fillRect(0, 0, W, 22);
-    ctx.fillStyle = '#00E5C3';
+    ctx.fillStyle = '#d0d0d0';
     ctx.font = `bold ${W * 0.045}px 'Outfit', sans-serif`;
     ctx.textAlign = 'left';
     ctx.fillText('DocuFlow Pro', W * 0.04, 15);
     // Pulsing dot
     const pulse = 0.5 + 0.5 * Math.sin(elapsed * 2.5);
-    ctx.fillStyle = `rgba(0,229,195,${0.5 + 0.5 * pulse})`;
+    ctx.fillStyle = `rgba(200,200,200,${0.5 + 0.5 * pulse})`;
     ctx.beginPath();
     ctx.arc(W - W * 0.06, 11, 4, 0, Math.PI * 2);
     ctx.fill();
@@ -252,8 +252,8 @@ function initLaptopDashboard(canvas) {
     // ── Stats row
     const statY = 35;
     const stats = [
-      { label: 'Processed', value: String(counter + Math.floor(elapsed * 0.3)), color: '#00E5C3' },
-      { label: 'Routing',   value: '23',   color: '#0099FF' },
+      { label: 'Processed', value: String(counter + Math.floor(elapsed * 0.3)), color: '#d0d0d0' },
+      { label: 'Routing',   value: '23',   color: '#a0a0a0' },
       { label: 'Pending',   value: '8',    color: '#F59E0B' },
     ];
     stats.forEach((s, i) => {
@@ -294,8 +294,8 @@ function initLaptopDashboard(canvas) {
         // animated fill
         if (active) {
           const grad = ctx.createLinearGradient(nx + 12, 0, nx2 - 12, 0);
-          grad.addColorStop(0, '#00E5C3');
-          grad.addColorStop(1, '#0099FF');
+          grad.addColorStop(0, '#e0e0e0');
+          grad.addColorStop(1, '#888888');
           ctx.strokeStyle = grad;
           ctx.lineWidth = 1.5;
           ctx.beginPath();
@@ -306,22 +306,22 @@ function initLaptopDashboard(canvas) {
       }
 
       // node circle
-      const nodeColor = active ? (i === 4 ? '#00E5C3' : '#0099FF') : '#1A1D26';
+      const nodeColor = active ? (i === 4 ? '#e0e0e0' : '#c0c0c0') : '#1A1D26';
       const glowAlpha = active ? 0.3 + 0.15 * Math.sin(elapsed * 3 + i) : 0;
       if (glowAlpha > 0) {
         const grd = ctx.createRadialGradient(nx, ny, 0, nx, ny, 22);
-        grd.addColorStop(0, `rgba(0,229,195,${glowAlpha})`);
-        grd.addColorStop(1, 'rgba(0,229,195,0)');
+        grd.addColorStop(0, `rgba(200,200,200,${glowAlpha})`);
+        grd.addColorStop(1, 'rgba(200,200,200,0)');
         ctx.fillStyle = grd;
         ctx.beginPath(); ctx.arc(nx, ny, 22, 0, Math.PI * 2); ctx.fill();
       }
-      ctx.fillStyle = active ? 'rgba(0,229,195,0.12)' : 'rgba(255,255,255,0.04)';
-      ctx.strokeStyle = active ? '#00E5C3' : '#1A1D26';
+      ctx.fillStyle = active ? 'rgba(200,200,200,0.10)' : 'rgba(255,255,255,0.04)';
+      ctx.strokeStyle = active ? '#c8c8c8' : '#1A1D26';
       ctx.lineWidth = 1.5;
       ctx.setLineDash([]);
       ctx.beginPath(); ctx.arc(nx, ny, 12, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
 
-      ctx.fillStyle = active ? '#00E5C3' : '#2A2D38';
+      ctx.fillStyle = active ? '#d0d0d0' : '#2A2D38';
       ctx.font = `${W * 0.038}px Inter, sans-serif`;
       ctx.textAlign = 'center';
       ctx.fillText(label, nx, ny + H * 0.095);
@@ -420,7 +420,7 @@ function initPhoneDashboard(canvas) {
     // Header
     ctx.fillStyle = '#0E1117';
     ctx.fillRect(0, 0, W, H * 0.1);
-    ctx.fillStyle = '#00E5C3';
+    ctx.fillStyle = '#c8c8c8';
     ctx.font = `bold ${W * 0.13}px 'Outfit', sans-serif`;
     ctx.textAlign = 'center';
     ctx.fillText('DFP', W / 2, H * 0.072);
@@ -429,7 +429,7 @@ function initPhoneDashboard(canvas) {
     const cx = W / 2;
     const cy = H * 0.32;
     const radii = [W * 0.28, W * 0.21, W * 0.14];
-    const colors = ['#00E5C3', '#0099FF', '#A855F7'];
+    const colors = ['#d0d0d0', '#a0a0a0', '#707070'];
     const progresses = [
       0.72 + 0.05 * Math.sin(elapsed * 0.8),
       0.45 + 0.08 * Math.sin(elapsed * 1.1 + 1),
@@ -463,7 +463,7 @@ function initPhoneDashboard(canvas) {
 
     // ── Status chips
     const chips = [
-      { label: 'Active',    count: '23', color: '#00E5C3' },
+      { label: 'Active',    count: '23', color: '#d0d0d0' },
       { label: 'Pending',   count: '8',  color: '#F59E0B' },
     ];
     const chipY = H * 0.58;
@@ -494,8 +494,8 @@ function initPhoneDashboard(canvas) {
       const bx = W * 0.06 + i * (barW2 + W * 0.02);
       const bh = H * 0.14 * animated;
       const grad = ctx.createLinearGradient(0, barY + H * 0.14 - bh, 0, barY + H * 0.14);
-      grad.addColorStop(0, '#00E5C3');
-      grad.addColorStop(1, '#0099FF');
+      grad.addColorStop(0, '#e0e0e0');
+      grad.addColorStop(1, '#888888');
       ctx.fillStyle = grad;
       roundRect(ctx, bx, barY + H * 0.14 - bh, barW2, bh, 2);
       ctx.fill();
