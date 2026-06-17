@@ -556,7 +556,7 @@ p  { margin-bottom: 1.5rem; color: var(--text-muted); font-size: 1.05rem; line-h
   position: relative;
   transform: rotateY(-8deg) rotateX(4deg);
   transform-style: preserve-3d;
-  filter: drop-shadow(0 40px 80px rgba(0,0,0,0.8)) drop-shadow(0 0 60px rgba(0,229,195,0.15));
+  filter: drop-shadow(0 40px 80px rgba(0,0,0,0.8));
   z-index: 2;
 }
 .laptop-body {
@@ -616,7 +616,7 @@ p  { margin-bottom: 1.5rem; color: var(--text-muted); font-size: 1.05rem; line-h
   bottom: 0px;
   transform: rotateY(8deg) rotateX(4deg) rotate(-3deg);
   transform-style: preserve-3d;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.7)) drop-shadow(0 0 30px rgba(0,229,195,0.1));
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.7));
   z-index: 3;
 }
 .phone-body {
@@ -818,8 +818,8 @@ p  { margin-bottom: 1.5rem; color: var(--text-muted); font-size: 1.05rem; line-h
   transition: var(--transition-fast);
 }
 .ribbon-logo-item:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); }
-.ribbon-logo-img { height: 44px; width: auto; max-width: 120px; filter: grayscale(100%) brightness(0.9); opacity: 0.75; transition: var(--transition-normal); object-fit: contain; }
-.ribbon-logo-item:hover .ribbon-logo-img { filter: grayscale(60%) brightness(1.1); opacity: 1; }
+.ribbon-logo-img { height: 44px; width: auto; max-width: 120px; filter: none; opacity: 0.9; transition: var(--transition-normal); object-fit: contain; }
+.ribbon-logo-item:hover .ribbon-logo-img { filter: brightness(1.12); opacity: 1; }
 .ribbon-separator { color: var(--text-dim); font-size: 0.6rem; flex-shrink: 0; }
 
 .disclaimer-note {
