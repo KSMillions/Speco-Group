@@ -1,540 +1,670 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speco Group | Engineering Efficiency. Building Legacy.</title>
-    <meta name="description" content="Speco Group is a South African construction optimization and systems integration consultancy, purpose-built for the Built Environment industry.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Speco Group | Systems Optimization & Workflow Automation</title>
+  <meta name="description" content="Speco Group designs and deploys intelligent automation systems and workflow optimization solutions for high-stakes industries — Logistics, Legal, Finance, Utilities, and Operations.">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png">
-    <link rel="shortcut icon" href="assets/favicon.png">
-    <meta name="msapplication-TileImage" content="assets/favicon.png">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="theme-color" content="#000000">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <meta name="theme-color" content="#07090F">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="https://www.speco.co.za" class="logo">
-                <span class="logo-text">SPECO<br><span class="logo-accent">GROUP</span></span>
+
+  <!-- ═══════════════════════════════════════ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Speco Group Home">
+        <span class="logo-text">SPECO<br><span class="logo-accent">GROUP</span></span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#docuflow" class="nav-link">Technology</a>
+        <a href="#sectors" class="nav-link">Industries</a>
+        <a href="#contact" class="btn btn-primary">Partner With Us</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO ═══ -->
+  <header class="hero" id="home">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="container hero-container">
+
+      <div class="hero-eyebrow reveal">
+        <span class="hero-eyebrow-dot"></span>
+        Systems Optimization &amp; Workflow Automation
+      </div>
+
+      <h1 class="reveal delay-1">
+        Systems that Scale.<br>
+        <span class="line-accent text-gradient">Workflows that Win.</span>
+      </h1>
+
+      <p class="hero-subtitle reveal delay-2">
+        Speco Group designs and deploys intelligent automation systems for high-stakes industries — from document pipelines to enterprise workflow orchestration.
+      </p>
+
+      <div class="hero-actions reveal delay-3">
+        <a href="#services" class="btn btn-primary">Explore Our Systems</a>
+        <a href="#docuflow" class="btn btn-outline">Meet DocuFlow Pro</a>
+      </div>
+
+      <div class="hero-stats reveal delay-4">
+        <div class="stat-item">
+          <span class="stat-value" id="stat-industries">5+</span>
+          <span class="stat-label">Industries Served</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">6+</span>
+          <span class="stat-label">Years Operational Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">Tier-1</span>
+          <span class="stat-label">Project Pedigree</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">100%</span>
+          <span class="stat-label">Bespoke Solutions</span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════ SERVICES ═══ -->
+  <section class="section-padding" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Our Services</span>
+        <h2 class="section-title">Precision systems for<br>every high-stakes operation.</h2>
+        <p>We build bespoke digital infrastructure and automation tools that eliminate inefficiency, enforce compliance, and deliver measurable commercial performance — regardless of industry.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h4>Workflow Process Mapping &amp; Automation</h4>
+          <p>End-to-end operational workflow analysis, bottleneck identification, and automated process design that turns complex multi-step operations into frictionless pipelines.</p>
+        </div>
+
+        <div class="service-card reveal delay-1">
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h4>Intelligent Document Routing</h4>
+          <p>AI-powered document lifecycle management, automated approval chains, and real-time routing pipelines — the technology behind DocuFlow Pro, deployed for your organisation.</p>
+        </div>
+
+        <div class="service-card reveal delay-2">
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h4>Custom Systems Integration</h4>
+          <p>Bridging disparate platforms, ERPs, and field tools into unified operational ecosystems. We connect the silos that are costing your business time and accuracy.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">04</div>
+          <div class="service-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h4>Data Intelligence &amp; Reporting Dashboards</h4>
+          <p>Custom-built operational dashboards that surface critical KPIs in real time — giving leadership decisive visibility over performance, compliance, and risk.</p>
+        </div>
+
+        <div class="service-card reveal delay-1">
+          <div class="service-number">05</div>
+          <div class="service-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Compliance &amp; Regulatory Automation</h4>
+          <p>Automated compliance tracking, audit-ready documentation, and regulatory filing systems that eliminate the manual overhead of operating in tightly governed industries.</p>
+        </div>
+
+        <div class="service-card reveal delay-2">
+          <div class="service-number">06</div>
+          <div class="service-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Enterprise Training &amp; Enablement</h4>
+          <p>Structured knowledge transfer, digital tool onboarding, and enablement programmes that ensure your team operates the systems — not the other way around.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ DOCUFLOW PRO SHOWCASE ═══ -->
+  <section class="docuflow-section section-padding" id="docuflow">
+    <div class="docuflow-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="docuflow-grid">
+
+        <!-- Left: Copy -->
+        <div class="docuflow-copy">
+          <div class="docuflow-badge reveal">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Speco Group Technology
+          </div>
+
+          <h2 class="reveal delay-1" style="color: var(--white);">
+            DocuFlow Pro —<br><span class="text-gradient">Intelligent Document Orchestration</span>
+          </h2>
+          <p class="reveal delay-1">
+            Our flagship SaaS platform eliminates document chaos in high-stakes environments. Built for organisations where a misfiled document or missed routing step has real commercial consequences.
+          </p>
+
+          <ul class="docuflow-features reveal delay-2">
+            <li>
+              <span class="feature-check">✓</span>
+              <span><strong style="color: var(--text-main);">Real-time document queuing</strong> — live visual tracking of every document in your pipeline, with priority routing and auto-escalation.</span>
+            </li>
+            <li>
+              <span class="feature-check">✓</span>
+              <span><strong style="color: var(--text-main);">Intelligent routing metrics</strong> — algorithmic assignment based on workload, expertise, and deadline proximity across teams.</span>
+            </li>
+            <li>
+              <span class="feature-check">✓</span>
+              <span><strong style="color: var(--text-main);">Audit-ready compliance logs</strong> — immutable, timestamped document trails that satisfy the most rigorous regulatory requirements.</span>
+            </li>
+            <li>
+              <span class="feature-check">✓</span>
+              <span><strong style="color: var(--text-main);">Cross-industry deployment</strong> — built for Legal, Finance, Logistics, and Operations teams with environment-specific configuration.</span>
+            </li>
+          </ul>
+
+          <div class="docuflow-actions reveal delay-3">
+            <a href="https://www.docuflowpro.co.za" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="cta-docuflow-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              View Live Webapp
             </a>
-            
-            <div class="nav-links">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#audiences" class="nav-link">Who We Serve</a>
-                <a href="#approach" class="nav-link">Approach</a>
-                <a href="#contact" class="btn btn-primary">Partner With Us</a>
-            </div>
-            
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <a href="https://www.docuflowpro.co.za" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="cta-docuflow-secondary">
+              Explore DocuFlow Pro →
+            </a>
+          </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="hero" id="home">
-        <!-- Temporary metallic gradient background since images are manual -->
-        <div class="hero-bg"></div>
-        <div class="hero-watermark reveal delay-3">
-            <img src="assets/favicon.png" alt="Speco Group Logo Watermark">
+        <!-- Right: Device Mockups -->
+        <div class="reveal delay-2">
+          <div class="device-stage">
+
+            <!-- Laptop -->
+            <div class="laptop-wrap" aria-label="DocuFlow Pro dashboard on laptop">
+              <div class="laptop-body">
+                <div class="laptop-screen-bezel">
+                  <div class="laptop-cam-bar"><div class="laptop-cam"></div></div>
+                  <div class="laptop-display">
+                    <canvas class="dfp-canvas" id="laptop-canvas" aria-label="Animated DocuFlow Pro dashboard"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base"></div>
+            </div>
+
+            <!-- Phone -->
+            <div class="phone-wrap" aria-label="DocuFlow Pro on smartphone">
+              <div class="phone-body">
+                <div class="phone-screen-bezel">
+                  <div class="phone-notch-bar"><div class="phone-notch"></div></div>
+                  <div class="phone-display">
+                    <canvas class="dfp-canvas" id="phone-canvas" aria-label="Animated DocuFlow Pro mobile view"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="container hero-container">
-            <h1 class="reveal"><span class="text-gradient">Engineering Efficiency.</span><br>Building Legacy.</h1>
-            <p class="hero-subtitle reveal delay-1">Precision systems for the Built Environment. We take the chaos out of construction admin.</p>
-            <div class="hero-actions reveal delay-2">
-                <a href="#services" class="btn btn-primary">Review Our Systems</a>
-                <a href="#about" class="btn btn-outline">Company Profile</a>
-            </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SECTOR SELECTOR ═══ -->
+  <section class="section-padding sector-section" id="sectors">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="section-tag">Industry Solutions</span>
+        <h2>Your industry. Your inefficiencies.<br><span class="text-gradient">Our tailored fix.</span></h2>
+        <p>Select your sector to see the specific operational bottlenecks we solve — and the precision systems we deploy to solve them.</p>
+      </div>
+
+      <div class="sector-tabs reveal delay-1" role="tablist" aria-label="Industry selector">
+        <button class="sector-tab active" data-sector="logistics" role="tab" aria-selected="true" id="tab-logistics">Logistics</button>
+        <button class="sector-tab" data-sector="legal"     role="tab" aria-selected="false" id="tab-legal">Legal</button>
+        <button class="sector-tab" data-sector="finance"   role="tab" aria-selected="false" id="tab-finance">Finance</button>
+        <button class="sector-tab" data-sector="ops"       role="tab" aria-selected="false" id="tab-ops">Operations</button>
+        <button class="sector-tab" data-sector="utilities" role="tab" aria-selected="false" id="tab-utilities">Utilities</button>
+      </div>
+
+      <!-- LOGISTICS -->
+      <div class="sector-content active" id="sector-logistics" role="tabpanel" aria-labelledby="tab-logistics">
+        <div class="sector-panel pain">
+          <div class="sector-panel-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Industry Bottlenecks
+          </div>
+          <ul>
+            <li>Manual shipment documentation creating delays at every handoff point</li>
+            <li>Cross-border compliance paperwork lost in email chains and folders</li>
+            <li>Supplier onboarding bottlenecks slowing new route activations by weeks</li>
+            <li>No real-time visibility on document status across freight partners</li>
+          </ul>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="about section-padding" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content reveal">
-                    <span class="section-tag">About Speco Group</span>
-                    <h2 class="section-title">We build the systems behind the structure.</h2>
-                    <p>Speco Group is a South African construction optimization and systems integration consultancy, purpose-built for the Built Environment industry. We are a founder-led firm, established on the principle that great construction businesses are built with intelligent systems and precise processes.</p>
-                    <p>Built by a practising Contracts Manager with 6+ years of on-site experience at leading tier-one firms (WBHO, Raubex, VDLV) and landmark projects including the South African Reserve Bank (SARB) Headquarters. We possess deep regulatory knowledge across JBCC, GCC 2015, CIDB, SACPCMP, OHS Act, and SANS standards.</p>
-                    <p>We do not offer generic software packages. We bridge the gap between hard-hat construction expertise and high-performance technology — solving operational problems construction companies didn’t know could be solved digitally.</p>
-                </div>
-                
-                <div class="about-cards">
-                    <div class="glass-panel info-card reveal delay-1">
-                        <div class="card-icon">01</div>
-                        <h3>Our Mission</h3>
-                        <p>To elevate construction businesses through intelligent systems — turning complexity into clarity, and inefficiency into precision.</p>
-                    </div>
-                    <div class="glass-panel info-card reveal delay-2">
-                        <div class="card-icon">02</div>
-                        <h3>Our Vision</h3>
-                        <p>To become the most trusted construction optimization partner in Africa — a legacy firm that transforms how the Built Environment operates, one system at a time.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="sector-panel solution">
+          <div class="sector-panel-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Speco Group Solutions
+          </div>
+          <ul>
+            <li>DocuFlow Pro automated routing eliminates manual handoff friction entirely</li>
+            <li>Compliance document generation and cross-border packet assembly in minutes</li>
+            <li>Digital supplier onboarding portals with automated verification workflows</li>
+            <li>Live shipment documentation dashboards with multi-party visibility</li>
+          </ul>
         </div>
-    </section>
+      </div>
 
-    <!-- Values Section -->
-    <section class="values section-padding" id="approach">
-        <div class="container">
-            <div class="section-header reveal" style="text-align: center; margin-left: auto; margin-right: auto;">
-                <span class="section-tag">Our Values</span>
-                <h2 class="section-title">The Foundation of Our Solutions</h2>
-                <p>Grounded in principles designed to ensure longevity, accuracy, and absolute compliance.</p>
-            </div>
-            
-            <div class="values-grid">
-                <div class="value-item glass-panel reveal">
-                    <h4>Precision</h4>
-                    <p>Every system we build is crafted with technical accuracy and contractual integrity.</p>
-                </div>
-                <div class="value-item glass-panel reveal delay-1">
-                    <h4>Legacy</h4>
-                    <p>We build solutions designed to outlast projects and deliver lasting business value.</p>
-                </div>
-                <div class="value-item glass-panel reveal delay-2">
-                    <h4>Partnership</h4>
-                    <p>We embed ourselves in our clients' operations as trusted advisors, not once-off vendors.</p>
-                </div>
-                <div class="value-item glass-panel reveal delay-3">
-                    <h4>Innovation</h4>
-                    <p>We leverage digital tools, automation, and AI to give construction firms a competitive edge.</p>
-                </div>
-                <div class="value-item glass-panel reveal delay-1">
-                    <h4>Compliance</h4>
-                    <p>Every solution is designed within the frameworks of SA construction law and industry standards.</p>
-                </div>
-            </div>
+      <!-- LEGAL -->
+      <div class="sector-content" id="sector-legal" role="tabpanel" aria-labelledby="tab-legal">
+        <div class="sector-panel pain">
+          <div class="sector-panel-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Industry Bottlenecks
+          </div>
+          <ul>
+            <li>Document version control chaos across matters with multiple contributors</li>
+            <li>Critical deadlines missed due to manual diarising and calendar silos</li>
+            <li>Contract review backlogs creating billing and relationship risk</li>
+            <li>Client reporting built manually from disparate systems every month</li>
+          </ul>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services section-padding" id="services">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Our Services</span>
-                <h2 class="section-title">Bespoke construction digital tooling & processes.</h2>
-                <p>Solving operational problems construction companies didn’t know could be solved digitally.</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-number">01</div>
-                    <h4>Construction Digital Tooling</h4>
-                    <p>Custom-built operational tools including site cost tracking workbooks, daily activity trackers, VO trackers, cost code glossaries, BoQ estimating workbooks, and SANS-compliant construction programmes.</p>
-                </div>
-                <div class="service-card reveal delay-1">
-                    <div class="service-number">02</div>
-                    <h4>Contract Administration & Compliance</h4>
-                    <p>AI-powered JBCC contract assistant chatbots, contract clause lookup tools, and compliance documentation aligned to JBCC, GCC 2015, CIDB, SACPCMP, and the OHS Act.</p>
-                </div>
-                <div class="service-card reveal delay-2">
-                    <div class="service-number">03</div>
-                    <h4>Tender & Estimating Support</h4>
-                    <p>Tender pricing documentation, construction methodology write-ups, programme compilation for tender submissions, and comprehensive capability assessment documentation.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-number">04</div>
-                    <h4>Systems Integration & Process Optimisation</h4>
-                    <p>Mapping and streamlining site workflows, digitising paper-based site processes, and linking cost control, programme, and progress reporting into unified systems.</p>
-                </div>
-                <div class="service-card reveal delay-1">
-                    <div class="service-number">05</div>
-                    <h4>Training & Professional Development</h4>
-                    <p>Authored content and training resources for construction professionals structured around JBCC, GCC, CIDB, and SACPCMP frameworks. ZAR-contextualised and SA built environment focused.</p>
-                </div>
-                <div class="service-card reveal delay-2" id="buildedge">
-                    <div class="service-number">06</div>
-                    <h4>BuildEdge Pro (Digital Product Suite)</h4>
-                    <p>Off-the-shelf digital tools for construction professionals. Downloadable templates, calculators, and reference tools priced in ZAR and built specifically for the South African market.</p>
-                </div>
-            </div>
+        <div class="sector-panel solution">
+          <div class="sector-panel-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Speco Group Solutions
+          </div>
+          <ul>
+            <li>Automated contract lifecycle management with version-controlled document trees</li>
+            <li>Deadline tracking and escalation system with cascading notification logic</li>
+            <li>AI-assisted clause routing that accelerates contract review by up to 60%</li>
+            <li>Automated client portal reporting generated directly from matter data</li>
+          </ul>
         </div>
-    </section>
+      </div>
 
-    <!-- Live Tools / Portfolio Section -->
-    <section class="portfolio section-padding" id="portfolio">
-        <div class="container">
-            <div class="section-header reveal text-center mx-auto" style="text-align: center; margin-left: auto; margin-right: auto;">
-                <span class="section-tag center-tag">Live Tools</span>
-                <h2 class="section-title">Deployed Systems in Action</h2>
-                <p>Our tools are not theoretical — they are live and used on active projects.</p>
-            </div>
-            
-            <div class="portfolio-grid">
-                <div class="portfolio-card glass-panel reveal">
-                    <div class="portfolio-content text-center">
-                        <h3>AI Contract Assistant</h3>
-                        <p class="text-gradient subtitle">VDLV JBCC Protocol</p>
-                        <p>A deployed, intelligent chatbot designed to assist construction professionals with JBCC and GCC contract clause interpretation on-site.</p>
-                        <a href="https://vdlv.vercel.app" target="_blank" class="btn btn-primary">View Live Tool</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-card glass-panel reveal delay-1">
-                    <div class="portfolio-content text-center">
-                        <h3>DrawScan RFI Engine</h3>
-                        <p class="text-gradient subtitle">Drawing Scrutinizer</p>
-                        <p>AI-powered computer vision system that analyzes project drawings to automatically surface pre-construction RFIs and technical queries.</p>
-                        <a href="drawing-scrutinizer.html" target="_blank" class="btn btn-primary">View Live Tool</a>
-                    </div>
-                </div>
-
-                <div class="portfolio-card glass-panel reveal delay-2">
-                    <div class="portfolio-content text-center">
-                        <h3>Site Activity Tracker</h3>
-                        <p class="text-gradient subtitle">Operations Dashboard</p>
-                        <p>An integrated field dashboard that logs labour, plant, materials, and JBCC Clause 25 delay events to auto-generate actionable site reports.</p>
-                        <a href="https://vdlv.vercel.app/tracker.html" target="_blank" class="btn btn-primary">View Live Tool</a>
-                    </div>
-                </div>
-            </div>
+      <!-- FINANCE -->
+      <div class="sector-content" id="sector-finance" role="tabpanel" aria-labelledby="tab-finance">
+        <div class="sector-panel pain">
+          <div class="sector-panel-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Industry Bottlenecks
+          </div>
+          <ul>
+            <li>Regulatory filing delays due to manual preparation and sign-off processes</li>
+            <li>Audit trail gaps creating exposure during regulatory reviews</li>
+            <li>Manual reconciliation consuming analyst capacity that should drive value</li>
+            <li>Client onboarding friction from fragmented KYC documentation workflows</li>
+          </ul>
         </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials section-padding" id="testimonials">
-        <div class="container">
-            <div class="section-header reveal text-center mx-auto" style="text-align: center; margin-left: auto; margin-right: auto;">
-                <span class="section-tag center-tag">Credibility</span>
-                <h2 class="section-title">Trusted by Industry Leaders</h2>
-                <p>We deliver systems that perform under the pressure of tier-one projects.</p>
-            </div>
-
-            <!-- Animated Logo Ribbon -->
-            <div class="logo-ribbon-wrapper">
-                <div class="logo-ribbon-label">Partners &amp; Clients</div>
-                <div class="logo-ribbon">
-                    <div class="logo-ribbon-track">
-                        <!-- Set 1 -->
-                        <div class="ribbon-logo-item">
-                            <img src="jclogo.png" alt="J.C. Van Der Linde & Venter Projects (Pty) Ltd" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="wbhologo.png" alt="WBHO Construction (Pty) Ltd" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="zlogo.png" alt="Zemxol Construction" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="dpnlogo.png" alt="DPNL Holdings" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="pxtlogo.png" alt="PX Trading Enterprise" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="rbxlogo.png" alt="Raubex Building" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="NEMOLOGO.png" alt="Nemo Consulting Services" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="NPC.png" alt="NPC Cement" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="jclogo.png" alt="J.C. Van Der Linde & Venter Projects (Pty) Ltd" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="wbhologo.png" alt="WBHO Construction (Pty) Ltd" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="zlogo.png" alt="Zemxol Construction" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="dpnlogo.png" alt="DPNL Holdings" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="pxtlogo.png" alt="PX Trading Enterprise" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="rbxlogo.png" alt="Raubex Building" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="NEMOLOGO.png" alt="Nemo Consulting Services" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="NPC.png" alt="NPC Cement" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <!-- Set 2 (duplicate for seamless loop) -->
-                        <div class="ribbon-logo-item">
-                            <img src="jclogo.png" alt="J.C. Van Der Linde & Venter Projects (Pty) Ltd" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="wbhologo.png" alt="WBHO Construction (Pty) Ltd" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="zlogo.png" alt="Zemxol Construction" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="dpnlogo.png" alt="DPNL Holdings" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="pxtlogo.png" alt="PX Trading Enterprise" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="rbxlogo.png" alt="Raubex Building" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="NEMOLOGO.png" alt="Nemo Consulting Services" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="NPC.png" alt="NPC Cement" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="jclogo.png" alt="J.C. Van Der Linde & Venter Projects (Pty) Ltd" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="wbhologo.png" alt="WBHO Construction (Pty) Ltd" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="zlogo.png" alt="Zemxol Construction" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="dpnlogo.png" alt="DPNL Holdings" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="pxtlogo.png" alt="PX Trading Enterprise" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="rbxlogo.png" alt="Raubex Building" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="NEMOLOGO.png" alt="Nemo Consulting Services" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                        <div class="ribbon-logo-item">
-                            <img src="NPC.png" alt="NPC Cement" class="ribbon-logo-img">
-                        </div>
-                        <div class="ribbon-separator">◆</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card glass-panel reveal">
-                    <p class="quote">"Speco Group's digital tooling bridged the gap between our field operations and commercial oversight. The systems are precise and incredibly effective."</p>
-                    <div class="author">- Commercial Director, Tier-1 Contractor</div>
-                </div>
-                <div class="testimonial-card glass-panel reveal delay-1">
-                    <p class="quote">"The contract compliance tools deployed by Speco have drastically reduced our administrative burden on JBCC projects."</p>
-                    <div class="author">- Managing Director, Civil Engineering Firm</div>
-                </div>
-            </div>
+        <div class="sector-panel solution">
+          <div class="sector-panel-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Speco Group Solutions
+          </div>
+          <ul>
+            <li>Automated compliance filing pipelines with multi-approver sign-off chains</li>
+            <li>Immutable, timestamped audit logs that satisfy FSCA and SARB requirements</li>
+            <li>Automated reconciliation pipelines freeing analysts for high-value work</li>
+            <li>Digital KYC and FICA workflow automation reducing onboarding time by 70%</li>
+          </ul>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact & Enquiry Section -->
-    <section class="contact section-padding" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <span class="section-tag">Partner With Us</span>
-                    <h2 class="section-title">Ready to build your legacy?</h2>
-                    <p>Stop using spreadsheets from 2010. Let's design the systems that will put your construction business a decade ahead.</p>
-                    <a href="mailto:info@speco.co.za" class="btn btn-outline" style="margin-top: 2rem; margin-right: 1rem;">info@speco.co.za</a>
-                    <a href="https://www.speco.co.za" target="_blank" class="btn btn-outline" style="margin-top: 2rem;">www.speco.co.za</a>
-                </div>
-                
-                <div class="contact-form-container glass-panel reveal delay-1">
-                    <form class="contact-form" action="https://formsubmit.co/info@speco.co.za" method="POST">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Name Surname" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company" placeholder="Construction Firm (Pty) Ltd" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="name@company.co.za" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">How can we help optimize your operations?</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Briefly describe your operational bottlenecks..." required></textarea>
-                        </div>
-                        <input type="hidden" name="_subject" value="New Enquiry from Speco Group Website">
-                        <input type="hidden" name="_captcha" value="false">
-                        <button type="submit" class="btn btn-primary w-100">Send Enquiry</button>
-                    </form>
-                </div>
-            </div>
+      <!-- OPERATIONS -->
+      <div class="sector-content" id="sector-ops" role="tabpanel" aria-labelledby="tab-ops">
+        <div class="sector-panel pain">
+          <div class="sector-panel-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Industry Bottlenecks
+          </div>
+          <ul>
+            <li>Siloed team communication generating duplicated effort and misalignment</li>
+            <li>Process bottlenecks invisible until they cause missed SLAs and client escalations</li>
+            <li>Reporting inconsistency across departments making leadership decisions data-poor</li>
+            <li>Manual task allocation based on availability rather than capacity or expertise</li>
+          </ul>
         </div>
-    </section>
+        <div class="sector-panel solution">
+          <div class="sector-panel-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Speco Group Solutions
+          </div>
+          <ul>
+            <li>Unified workflow orchestration hubs connecting all operational teams in one system</li>
+            <li>Real-time bottleneck detection dashboards with pre-SLA breach alerting</li>
+            <li>Standardised cross-departmental reporting templates auto-populated from live data</li>
+            <li>Intelligent task routing engine that assigns work based on capacity and skill-match</li>
+          </ul>
+        </div>
+      </div>
 
-    <!-- Audiences & Value Prop -->
-    <section class="audiences section-padding" id="audiences">
-        <div class="container">
-            <div class="audiences-grid">
-                <div class="audiences-content reveal">
-                    <span class="section-tag">Who We Serve</span>
-                    <h2 class="section-title">Built Environment Stakeholders</h2>
-                    
-                    <div class="table-container">
-                        <table class="audience-table">
-                            <thead>
-                                <tr>
-                                    <th>Client Type</th>
-                                    <th>What We Solve For Them</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Main Contractors</strong> (CIDB 4–9)</td>
-                                    <td>Contract admin systems, commercial controls, site ops tools, programme management.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Specialist Subcontractors</strong></td>
-                                    <td>Scope management, payment tracking, variation logging, compliance registers.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Property Developers</strong></td>
-                                    <td>Project oversight dashboards, cost control systems, consultant management tools.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Quantity Surveying Firms</strong></td>
-                                    <td>BoQ automation, estimating tools, fee proposal templates, SACPCMP CPD trackers.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>PM Consultancies</strong></td>
-                                    <td>Reporting systems, risk registers, programme tools, client communication frameworks.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Construction SMEs</strong></td>
-                                    <td>Full business process optimization — from quotation to project close-out.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Government & Parastatals</strong></td>
-                                    <td>CIDB compliance tools, procurement trackers, OHS Act management systems.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                
-                <div class="value-prop-content reveal delay-1">
-                    <div class="glass-panel value-prop-card">
-                        <span class="section-tag" style="margin-bottom: 2rem;">Value Proposition</span>
-                        
-                        <div class="prop-item">
-                            <h5>The Professional Standard</h5>
-                            <p>Speco Group delivers bespoke construction optimization solutions that integrate intelligent digital systems into Built Environment businesses — reducing administrative burden, strengthening contractual compliance, and driving measurable commercial performance.</p>
-                        </div>
-                        
-                        <div class="prop-item">
-                            <h5>The Pragmatic View</h5>
-                            <p>We take the chaos out of construction admin. Whether it's contract management, site reporting, or cost control — we build custom digital systems that make your business run smarter, faster, and cleaner.</p>
-                        </div>
-                        
-                        <div class="prop-item bold-statement text-gradient">
-                            <p>Your competitors are still using spreadsheets from 2010. Speco Group builds the systems that put you a decade ahead.</p>
-                        </div>
-                        
-                        <hr class="metallic-divider">
-                        
-                        <div class="prop-item" style="margin-bottom: 0;">
-                            <h5>Business Model</h5>
-                            <ul class="business-model-list">
-                                <li><strong>Project-Based:</strong> Once-off system design and implementation.</li>
-                                <li><strong>Retainer:</strong> Ongoing advisory and system maintenance.</li>
-                                <li><strong>Licensing:</strong> White-labelled digital tools.</li>
-                                <li><strong>Training:</strong> Structured knowledge transfer workshops.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- UTILITIES -->
+      <div class="sector-content" id="sector-utilities" role="tabpanel" aria-labelledby="tab-utilities">
+        <div class="sector-panel pain">
+          <div class="sector-panel-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Industry Bottlenecks
+          </div>
+          <ul>
+            <li>Regulatory inspection backlogs caused by manual scheduling and paper-based records</li>
+            <li>Field-to-office reporting lag creating hours-old data for control room decisions</li>
+            <li>Asset management gaps where maintenance records live in disconnected spreadsheets</li>
+            <li>Incident documentation inconsistency creating regulatory and liability exposure</li>
+          </ul>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="https://www.speco.co.za" class="logo">
-                        <span class="logo-text">SPECO<br><span class="logo-accent">GROUP</span></span>
-                    </a>
-                    <p class="footer-tagline">Engineering Efficiency. Building Legacy.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Our Services</a></li>
-                        <li><a href="#portfolio">Live Tools</a></li>
-                        <li><a href="#buildedge">BuildEdge Pro</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Connect</h4>
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: 0.75rem;"><a href="mailto:info@speco.co.za" style="color: var(--text-muted); text-decoration: none; transition: var(--transition-fast);">info@speco.co.za</a></li>
-                        <li style="margin-bottom: 0.75rem;"><a href="https://www.speco.co.za" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: none; transition: var(--transition-fast);">www.speco.co.za</a></li>
-                    </ul>
-                    <div class="social-buttons">
-                        <a href="https://www.linkedin.com/company/specogroup/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        </a>
-                        <a href="https://www.instagram.com/specogroup" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Speco Group. All rights reserved. Built for the Built Environment.</p>
-            </div>
+        <div class="sector-panel solution">
+          <div class="sector-panel-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Speco Group Solutions
+          </div>
+          <ul>
+            <li>Digital inspection workflow management with automated regulatory scheduling</li>
+            <li>Mobile-to-cloud field data pipelines delivering real-time operational telemetry</li>
+            <li>Unified asset lifecycle tracking linked to maintenance calendars and compliance records</li>
+            <li>Standardised incident reporting system with automatic escalation and regulatory notification</li>
+          </ul>
         </div>
-    </footer>
+      </div>
 
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PARTNERS / CREDIBILITY ═══ -->
+  <section class="section-padding" id="partners">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="section-tag">Credibility</span>
+        <h2>Trusted by Industry Leaders</h2>
+        <p>Built on Tier-1 project experience. Deployed across high-stakes operational environments.</p>
+      </div>
+
+      <div class="logo-ribbon-wrapper reveal">
+        <div class="logo-ribbon-label">Partners &amp; Clients</div>
+        <div class="logo-ribbon" role="marquee" aria-label="Partners and clients logo carousel">
+          <div class="logo-ribbon-track">
+            <!-- Set 1 -->
+            <div class="ribbon-logo-item"><img src="jclogo.png" alt="J.C. Van Der Linde & Venter Projects" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="wbhologo.png" alt="WBHO Construction" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="zlogo.png" alt="Zemxol Construction" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="dpnlogo.png" alt="DPNL Holdings" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="pxtlogo.png" alt="PX Trading Enterprise" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="rbxlogo.png" alt="Raubex Building" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="NEMOLOGO.png" alt="Nemo Consulting Services" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="NPC.png" alt="NPC Cement" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <!-- Set 2 (duplicate for loop) -->
+            <div class="ribbon-logo-item"><img src="jclogo.png" alt="J.C. Van Der Linde & Venter Projects" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="wbhologo.png" alt="WBHO Construction" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="zlogo.png" alt="Zemxol Construction" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="dpnlogo.png" alt="DPNL Holdings" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="pxtlogo.png" alt="PX Trading Enterprise" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="rbxlogo.png" alt="Raubex Building" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="NEMOLOGO.png" alt="Nemo Consulting Services" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+            <div class="ribbon-logo-item"><img src="NPC.png" alt="NPC Cement" class="ribbon-logo-img"></div>
+            <div class="ribbon-separator">◆</div>
+          </div>
+        </div>
+
+        <p class="disclaimer-note">
+          Note: The companies and frameworks mentioned above represent high-caliber operational ecosystems that inform our structural knowledge, compliance standards, and industry methodologies. While several represent active clients and projects we have directly optimized, others comprise the professional foundation of Speco Group's executive-level experience.
+        </p>
+      </div>
+
+      <div class="testimonials-grid" style="margin-top: 4rem;">
+        <div class="testimonial-card glass-panel reveal">
+          <p class="quote">"Speco Group's systems bridged the gap between our field operations and commercial oversight. The automation tools are precise, and the gains in efficiency were immediate and measurable."</p>
+          <div class="author">— Commercial Director, Tier-1 Contractor</div>
+        </div>
+        <div class="testimonial-card glass-panel reveal delay-1">
+          <p class="quote">"The workflow orchestration platform deployed by Speco has drastically reduced our administrative burden and given our leadership team a level of operational visibility we've never had before."</p>
+          <div class="author">— Managing Director, Civil Engineering Firm</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ WHO WE SERVE ═══ -->
+  <section class="section-padding audiences-section" id="audiences">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="section-tag">Who We Serve</span>
+        <h2>Built for operators<br>in high-stakes environments.</h2>
+        <p>Our clients share one thing in common: they cannot afford operational failure. We build the systems that make sure they never have to.</p>
+      </div>
+
+      <div class="audience-cards">
+        <div class="audience-card reveal">
+          <div class="audience-icon">📦</div>
+          <h5>Logistics &amp; Supply Chain</h5>
+          <p>Freight operators, 3PLs, and customs brokers needing end-to-end document automation and shipment tracking pipelines.</p>
+        </div>
+        <div class="audience-card reveal delay-1">
+          <div class="audience-icon">⚖️</div>
+          <h5>Legal Firms &amp; Practices</h5>
+          <p>Attorneys, commercial law firms, and legal departments requiring contract lifecycle management and deadline automation.</p>
+        </div>
+        <div class="audience-card reveal delay-2">
+          <div class="audience-icon">🏦</div>
+          <h5>Financial Services</h5>
+          <p>Banks, asset managers, and insurers where regulatory compliance, KYC automation, and audit trail integrity are non-negotiable.</p>
+        </div>
+        <div class="audience-card reveal">
+          <div class="audience-icon">⚙️</div>
+          <h5>Operations &amp; Enterprise</h5>
+          <p>Large-scale operational teams needing unified workflow orchestration, bottleneck elimination, and standardised reporting.</p>
+        </div>
+        <div class="audience-card reveal delay-1">
+          <div class="audience-icon">🏗️</div>
+          <h5>Utilities &amp; Infrastructure</h5>
+          <p>Regulated service providers requiring inspection management, field data pipelines, and asset lifecycle automation.</p>
+        </div>
+        <div class="audience-card reveal delay-2">
+          <div class="audience-icon">🏛️</div>
+          <h5>Government &amp; Parastatals</h5>
+          <p>Public sector entities requiring procurement tracking, regulatory compliance systems, and citizen-facing process automation.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ LIVE TOOLS ═══ -->
+  <section class="section-padding" id="portfolio">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="section-tag">Live Tools</span>
+        <h2>Deployed Systems in Action</h2>
+        <p>Our tools are not theoretical — they are live and operating on active projects right now.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card glass-panel reveal">
+          <h3>AI Contract Assistant</h3>
+          <p class="subtitle">VDLV JBCC Protocol</p>
+          <p>A deployed intelligent chatbot assisting legal and construction professionals with contract clause interpretation and compliance guidance.</p>
+          <a href="https://vdlv.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Live Tool</a>
+        </div>
+
+        <div class="portfolio-card glass-panel reveal delay-1">
+          <h3>DrawScan RFI Engine</h3>
+          <p class="subtitle">Drawing Scrutinizer</p>
+          <p>AI-powered computer vision that analyses project drawings to automatically surface pre-construction RFIs and technical queries.</p>
+          <a href="drawing-scrutinizer.html" target="_blank" class="btn btn-primary">View Live Tool</a>
+        </div>
+
+        <div class="portfolio-card glass-panel reveal delay-2">
+          <h3>Site Activity Tracker</h3>
+          <p class="subtitle">Operations Dashboard</p>
+          <p>An integrated field dashboard logging activity, progress, and delay events — auto-generating actionable site reports in real time.</p>
+          <a href="https://vdlv.vercel.app/tracker.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Live Tool</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CONTACT ═══ -->
+  <section class="section-padding" id="contact" style="background: var(--bg-panel); border-top: 1px solid var(--glass-border);">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <span class="section-tag">Partner With Us</span>
+          <h2 style="color: var(--white);">Ready to optimize<br>your operations?</h2>
+          <p>Your competitors are still running on legacy processes. Let's build the systems that put you a decade ahead — whatever industry you operate in.</p>
+
+          <div class="contact-actions">
+            <a href="mailto:info@speco.co.za" class="contact-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@speco.co.za
+            </a>
+            <a href="https://www.speco.co.za" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              www.speco.co.za
+            </a>
+            <a href="about.html" class="contact-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Our Company Background
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-container glass-panel reveal delay-1">
+          <form class="contact-form" action="https://formsubmit.co/info@speco.co.za" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Name Surname" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company (Pty) Ltd" required>
+            </div>
+            <div class="form-group">
+              <label for="industry">Industry</label>
+              <select id="industry" name="industry">
+                <option value="" disabled selected>Select your industry</option>
+                <option>Logistics &amp; Supply Chain</option>
+                <option>Legal</option>
+                <option>Financial Services</option>
+                <option>Operations &amp; Enterprise</option>
+                <option>Utilities &amp; Infrastructure</option>
+                <option>Government &amp; Parastatals</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="name@company.co.za" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Describe your operational challenge</label>
+              <textarea id="message" name="message" rows="4" placeholder="What's the bottleneck we can help you eliminate?..." required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="New Enquiry from Speco Group Website">
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit" class="btn btn-primary w-100" id="submit-enquiry">Send Enquiry →</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Speco Group">
+            <span class="logo-text">SPECO<br><span class="logo-accent">GROUP</span></span>
+          </a>
+          <p class="footer-tagline">Optimizing Operations. Automating the Future.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#docuflow">DocuFlow Pro</a></li>
+            <li><a href="#sectors">Industry Solutions</a></li>
+            <li><a href="#portfolio">Live Tools</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <ul style="list-style:none; padding:0; margin-bottom: 1.5rem; display:flex; flex-direction:column; gap:0.75rem;">
+            <li><a href="mailto:info@speco.co.za" style="color:var(--text-dim);text-decoration:none;font-size:0.88rem;transition:var(--transition-fast);" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-dim)'">info@speco.co.za</a></li>
+            <li><a href="https://www.speco.co.za" target="_blank" rel="noopener noreferrer" style="color:var(--text-dim);text-decoration:none;font-size:0.88rem;transition:var(--transition-fast);" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-dim)'">www.speco.co.za</a></li>
+          </ul>
+          <div class="social-buttons">
+            <a href="https://www.linkedin.com/company/specogroup/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://www.instagram.com/specogroup" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Speco Group. All rights reserved.</p>
+        <p style="font-size:0.75rem; color: var(--text-dim);">Systems Optimization &amp; Workflow Automation</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
